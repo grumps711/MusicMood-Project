@@ -1,4 +1,4 @@
-# MusicMood-Project
+# MusicMood Project
 
 ## Descripción General:<br>
 MusicMood es una plataforma web que utiliza una API de música para analizar el estado de ánimo de las listas de canciones del usuario. El objetivo es crear una experiencia de escucha más personalizada y analítica.
