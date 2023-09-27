@@ -1,7 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useEffect } from 'react';
+import axios from 'axios';
 
 function App() {
+  console.log("he entrado en app()");
+  useEffect(() => {
+    axios.get('http://localhost/api.php')
+      .then(response => {
+        console.log('Datos recibidos:', response.data);
+      })
+      .catch(error => {
+        console.log('Error al obtener datos:', error);
+      });
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
