@@ -6,7 +6,7 @@ import axios from 'axios';
 function App() {
   console.log("he entrado en app()");
   useEffect(() => {
-    axios.get('http://localhost/api.php')
+    axios.get('https://musicmood:8890/api.php')
       .then(response => {
         console.log('Datos recibidos:', response.data);
       })
